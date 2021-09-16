@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Note</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+    <div class="container">
+        <div class="header">
+            <p class="header_title">Select Books!</p>
+        </div>
+        <div class="search">
+            <div class="search_text_wrap">
+                <input type="text" id="search_text" class="search_text" name="keyword" value="" placeholder="本のタイトルを入力">
+                <button id="search_btn" class="search_btn button">検索する</button>
+            </div>
+        </div>
+        <div class="kouho_list_wrap">
+         <ul id="kouho_list"></ul>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase.js"></script>
+    <script type="text/javascript" src="js/reading.js"></script>
+</body>
+</html>

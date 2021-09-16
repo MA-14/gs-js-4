@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Note</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p class="header_title">Look back notes!</p>
+  <div class="rireki_contents">
+    <label for="title_select">タイトル選択：</label>
+    <select name="title_select" id="title_select" class="title_select">
+      <option></option>
+    </select>
+    <button id="title_decide">決定</button>
+    <button id="rireki_home">Topへ</button>
+  </div>
+
+  <div id="notes_display">
+    <ul id="dispay_selected_book"></ul>
+    <div id="output"></div>
+  </div>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase.js"></script>
+  <script type="text/javascript" src="js/reading.js"></script>
+  <script>
+    document.getElementById("dispay_selected_book").style.display ="none";
+  </script>
+  <script>
+
+
+  </script>
+</body>
+</html>

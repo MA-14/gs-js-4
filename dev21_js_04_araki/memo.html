@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Note</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p class="header_title">Take notes!</p>
+  <div class="note_wrapper">
+    <ul id="selected_content"></ul>
+    <div class="note_contents">
+      <div class="page_wrapper">
+        <div class="page_wrapper2">
+          <label for="page" class="page_title">ページ数 :</label>
+          <input type="text" id="page">
+        </div>
+        <div class="align_right"><button id="note_append">メモ追加</button></div>
+      </div>
+      
+      <div class="note_memo">
+        <label for="note"></label>
+        <textarea name="note" id="note" cols="50" rows="10" placeholder="ここにメモを書きましょう！"></textarea>
+      </div>
+      <div id="note_button">
+        <button id="another_book_select">別の本を選択</button>
+        <button id="rireki_jump">履歴</button>
+        <button id="home_jump">Topへ</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase.js"></script>
+  <script type="text/javascript" src="js/reading.js"></script>
+
+  <script>
+    newPostRef.ref().orderByChild("time").limitToLast(1).on("child_added",function(data){
+        let v=data.val();
+        console.log(v.title)
+        console.log(v.time)
+        console.log(v.img)
+        console.log(v.author)
+        let html=`
+                <li class="selected_content">
+                    <img src="${v.img}"id="selected_img"> <br>
+                    タイトル：<span id="selected_title">${v.title}</span> <br>
+                    著者：<span id="selected_author">${v.author}</span> <br>
+                </li>`
+            $("#selected_content").append(html);
+      })
+
+  </script>
+</body>
+</html>

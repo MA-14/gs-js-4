@@ -1,0 +1,250 @@
+#kouho_list{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+#selected_list{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+
+.kouho_content{
+  width: 33%;
+  font-size: 16px;
+  margin: 10px 20px 5px 20px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding:15px 0;
+}
+#content_img{
+  align-items: center;
+}
+
+#selected_content{
+  list-style: none;
+  width: 30%;
+  margin: 10px 30px 0px 0px;
+  border-right: 2px solid ;
+  text-align: center;
+}
+
+body{
+  background-image: url("/Users/m.a/Gs Academy/課題提出/dev21_js_04_araki/img/background.jpg");
+  background-size: cover;
+}
+
+.note_wrapper{
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 0;
+  width: 80%;
+  margin: 80px auto;
+}
+
+.page_wrapper{
+  display: flex;
+}
+.page_wrapper2{
+  padding-top: 7px;
+}
+.page_title{
+  margin-right: 5px;
+  padding-bottom: 0px;
+}
+.align_right{
+  margin:0 0 12px auto; 
+}
+
+#page{
+  height: 16px;
+  width: 50px;
+}
+#note_button{
+  display: flex;
+  justify-content: right;
+}
+#note_append{
+  margin-top: 10px;
+}
+
+#another_book_select{
+  margin-top: 10px;
+  margin-right:10px;
+}
+
+#rireki_jump{
+  margin: 10px 10px 0 0 ;
+}
+
+#home_jump{
+  margin-top: 10px;
+}
+.note_contents{
+  margin: 0 auto;
+}
+
+.search{
+  margin: 10px 0 0 10px;
+}
+
+.search_text_wrap{
+  margin-bottom: 10px;
+}
+#search_text{
+  height: 30px;
+  width: 300px;
+}
+.rireki_contents{
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 0;
+  width: 60%;
+  margin: 80px auto;
+  justify-content: center;
+}
+
+#title_decide{
+  margin: 0 15px;
+}
+.title_select{
+  width: 300px;
+}
+#notes_display{
+  width: 60%;
+  list-style: none;
+  margin: 30px auto 0;
+  justify-content: center;
+}
+#dispay_selected_book{
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 20px 0 ;
+  border-bottom: 2px solid white;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#output{
+  background-color: white;
+  border-radius: 10px;
+}
+#select_contents{
+  border: 1px solid white;
+  border-radius:10px;
+  margin-bottom:10px ;
+  display: flex;
+}
+
+#select_content_2 {
+  margin:5px 10px 0 auto; 
+}
+
+/* ボタンはコピペ */
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  background-color: #357;
+  border: 2px solid #357;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #fff;
+  border-color: #59b1eb;
+  color: #59b1eb;
+}
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #357;
+}
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.button::before {
+  right: 0;
+}
+.button::after {
+  left: 0;
+}
+.button:hover::before,
+.button:hover::after {
+  width: 0;
+  background-color: #59b1eb;
+}
+/* ////// */
+
+.btn_index{
+  text-align: center;
+  padding-top: 250px;
+  font-size: 30px;
+}
+.b_index_input{
+  height: 80px;
+  width: 300px;
+  padding-top: 12px;
+  margin-right: 30px;
+}
+
+.b_index_rireki{
+  height: 80px;
+  width: 300px;
+  padding-top: 12px;
+  margin-left: 30px;
+}
+
+.header{
+  margin: 0 auto;
+}
+
+.header_title{
+  text-align: center;
+  padding: 20px 0 20px;
+  width: 50%;
+  background-color: #389;
+  color: #fff;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.search_btn{
+  width: 80px;
+  height: 38px;
+  margin-left: 10px;
+  line-height: 0px;
+  padding-top: 0px;
+}
+
+.search_text_wrap{
+  margin: 70px 0 ;
+  display: flex;
+  justify-content: center;
+}
