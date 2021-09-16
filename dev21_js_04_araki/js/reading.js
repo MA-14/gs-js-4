@@ -1,6 +1,6 @@
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCsFautxEr6F1ar7ix5VWgbzBhiY2Jrp2k",
+  apiKey: "",
   authDomain: "reading-memo.firebaseapp.com",
   projectId: "reading-memo",
   storageBucket: "reading-memo.appspot.com",
