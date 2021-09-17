@@ -1,6 +1,5 @@
-
 const firebaseConfig = {
-  apiKey: "",
+  apiKey: "AIzaSyCsFautxEr6F1ar7ix5VWgbzBhiY2Jrp2k",
   authDomain: "reading-memo.firebaseapp.com",
   projectId: "reading-memo",
   storageBucket: "reading-memo.appspot.com",
@@ -159,6 +158,12 @@ $(function(){
   
   //履歴を表示する本のタイトルを選択し、メモを表示
   $("#title_decide").on("click",function(){
+    $("#select_page_title").val("");
+    $("#select_page_content").val("");
+    $("#select_note_title").val("");
+    $("#select_note_content").val("");
+    $("#select_content_2").val("");
+    $("#selected_content").val("");
     document.getElementById("dispay_selected_book").style.display ="block";
     const d = $("#title_select").val()
     newPostRef.ref(d).on("value",function(data){
@@ -170,7 +175,6 @@ $(function(){
               著者：<span id="selected_author">${v.author}</span> <br>
           </li>`
       $("#dispay_selected_book").append(html);
-      
     })
     
     newPostRef.ref(d).on("child_added",function(data){
@@ -195,4 +199,3 @@ $(function(){
     $("#rireki_home").on("click",function(){
       location.href= "index.html"
     })
-
